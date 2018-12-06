@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -23,10 +25,10 @@ public class PageLogin {
 		
 		driver.findElement(userField).sendKeys(user);
     	driver.findElement(passwordField).sendKeys(pass);
-    	driver.findElement(loginButton).click();
-    	
-    	Helpers helper = new Helpers();
-    	helper.sleepSeconds(4); 
+    	driver.findElement(loginButton).click();    	
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    	//Helpers helper = new Helpers();
+    	//helper.sleepSeconds(4); 
 	}
 
 }

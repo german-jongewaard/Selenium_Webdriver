@@ -2,8 +2,7 @@ package helpers;
 
 public class Helpers {
 	
-	public void sleepSeconds(int seconds) {
-		
+	public void sleepSeconds(int seconds) {		
 		
 		try {
 			Thread.sleep(seconds * 1000);
@@ -11,8 +10,7 @@ public class Helpers {
 			
 			e.printStackTrace();
 			
-		}
-		
+		}		
 		
 	}
 
