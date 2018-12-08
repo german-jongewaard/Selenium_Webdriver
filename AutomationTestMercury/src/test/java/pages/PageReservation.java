@@ -33,7 +33,7 @@ public class PageReservation {
 	public void selectPassengers(int cant) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement cantidadPasajeros = wait.until(ExpectedConditions.presenceOfElementLocated(passengersDrop));
-		Select selectPasajeros = new Select(driver.findElement(passengersDrop));
+		Select selectPasajeros = new Select(cantidadPasajeros);
 		selectPasajeros.selectByVisibleText(Integer.toString(cant));		
 	}
 	
