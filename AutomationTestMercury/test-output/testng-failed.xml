@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests">
         <methods>
-          <include name="pruebaDos"/>
+          <include name="pruebaTres"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
