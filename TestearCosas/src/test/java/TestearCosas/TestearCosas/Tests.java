@@ -28,5 +28,12 @@ public class Tests {
 		Assert.assertEquals(numeroUno + 10,  numeroDos + 12);
 		
 	}
+	
+	@Test
+	public void testNumerosNoIguales() {
+		
+		
+		
+	}
     
 }
