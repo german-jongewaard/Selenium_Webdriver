@@ -32,6 +32,7 @@ public class Tests {
 	@Test
 	public void testNumerosNoIguales() {
 		
+		Assert.assertEquals(numeroUno, numeroDos);
 		
 		
 	}
