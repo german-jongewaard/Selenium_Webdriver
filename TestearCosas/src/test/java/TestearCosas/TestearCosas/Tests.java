@@ -36,5 +36,11 @@ public class Tests {
 		
 		
 	}
+	
+	@Test
+	public void testDeNulo() {
+		
+		Personas persona = new Personas("Pepe", "Gonzalez");
+	}
     
 }
