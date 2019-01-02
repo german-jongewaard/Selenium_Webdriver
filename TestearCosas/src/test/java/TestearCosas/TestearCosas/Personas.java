@@ -11,5 +11,9 @@ public class Personas {
 		apellido = this.apellido;
 		
 	}
+	
+	public void saludar() {
+		System.out.println("Hola " + this.nombre + " " + this.apellido);
+	}
 
 }
