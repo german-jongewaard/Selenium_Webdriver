@@ -41,6 +41,8 @@ public class Tests {
 	public void testDeNulo() {
 		
 		Personas persona = new Personas("Pepe", "Gonzalez");
+		
+		Assert.assertNull(persona);
 	}
     
 }
