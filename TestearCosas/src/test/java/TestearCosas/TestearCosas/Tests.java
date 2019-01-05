@@ -42,6 +42,13 @@ public class Tests {
 		
 		Personas persona = new Personas("Pepe", "Gonzalez");
 		
+		Assert.assertNotNull(persona);
+	}
+	
+	@Test
+	public void testNulo() {
+		
+		Personas persona = null;
 		Assert.assertNull(persona);
 	}
     
