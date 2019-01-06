@@ -52,4 +52,13 @@ public class Tests {
 		Assert.assertNull(persona);
 	}
     
+	@Test
+	public void mismoObjeto() {
+		
+		Personas persona = new Personas("Pepe", "Gonzalez");
+		
+		Personas personaDos = new Personas("Pepe", "Gonzalez");
+		
+		Assert.assertSame(persona, personaDos); //da fallo porque son dos objetos distintos
+	}
 }
