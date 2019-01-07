@@ -12,9 +12,10 @@ public class Tests {
 	@Test
 	public void testNumeroVerdadero() {
 		
-		Assert.assertTrue(numeroUno == numeroDos + 1, "El  nro. no es verdadero " + String.valueOf(numeroUno));		
+		Assert.assertTrue(numeroUno == numeroDos + 2, "El  nro. es verdadero " + String.valueOf(numeroUno));		
 		
 	}
+	
 	@Test
 	public void testNumeroFalso() {
 		
@@ -32,8 +33,7 @@ public class Tests {
 	@Test
 	public void testNumerosNoIguales() {
 		
-		Assert.assertEquals(numeroUno - 1, numeroDos * 514);
-		
+		//Assert.assertEquals(numeroUno - 1, numeroDos * 514);		
 		
 	}
 	
@@ -57,8 +57,39 @@ public class Tests {
 		
 		Personas persona = new Personas("Pepe", "Gonzalez");
 		
+		Personas personaDos = persona;
+		
+		Assert.assertSame(persona, personaDos);  
+	}
+	
+	@Test
+	public void noMismoObjeto() {
+		
+		Personas persona = new Personas("Pepe", "Gonzalez");
+		
 		Personas personaDos = new Personas("Pepe", "Gonzalez");
 		
-		Assert.assertSame(persona, personaDos); //da fallo porque son dos objetos distintos
+		Assert.assertNotSame(persona, personaDos);  
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
